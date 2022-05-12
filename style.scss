@@ -91,6 +91,7 @@ html {
   &__card {
     padding-inline: 3rem;
     background-color: $color-dark-cyan;
+    padding-block: 2rem;
   }
   &__header {
     font-family: "Poppins", sans-serif;
@@ -98,25 +99,31 @@ html {
   }
   &__content {
     font-size: 1.45rem;
+    margin-top: 1rem;
   }
   &__form {
     width: 100%;
     padding: 1rem;
     border-radius: 0.5rem;
+    margin-top: 1rem;
   }
   &__button {
     float: right;
     padding: 1.5rem 3rem;
     border-radius: 0.5rem;
+    margin-top: 1rem;
   }
 }
 
 .bottom {
   &__logo {
     filter: brightness(0) invert(1);
+    margin-top: 10rem;
   }
   &__content {
     font-size: 1.45rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -124,6 +131,7 @@ html {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+  margin-block: 2rem;
   &__svg {
     margin-right: 2rem;
   }
@@ -139,9 +147,16 @@ html {
 }
 
 .social {
+  margin-top: 2rem;
   display: flex;
   &__icon {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
+    transition: all 0.5s;
+    &:hover {
+      color: #00c8f8;
+      cursor: pointer;
+      transition: all 0.5s;
+    }
   }
   :last-child {
     margin-right: 0;
