@@ -82,13 +82,68 @@ html {
 }
 
 .newsletter {
+  color: white;
   &__bg {
     background-repeat: no-repeat;
     display: block;
-  }
-  &__header {
+    width: 100%;
   }
   &__card {
-    background-color: yellow;
+    padding-inline: 3rem;
+    background-color: $color-dark-cyan;
+  }
+  &__header {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+  }
+  &__content {
+    font-size: 1.45rem;
+  }
+  &__form {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  &__button {
+    float: right;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.bottom {
+  &__logo {
+    filter: brightness(0) invert(1);
+  }
+  &__content {
+    font-size: 1.45rem;
+  }
+}
+
+.bottom__contact {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  &__svg {
+    margin-right: 2rem;
+  }
+  &__content {
+    text-decoration: none;
+    color: $color-pale-blue;
+    font-size: 1.5rem;
+    a {
+      text-decoration: none;
+      color: $color-pale-blue;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  &__icon {
+    margin-right: 1rem;
+  }
+  :last-child {
+    margin-right: 0;
   }
 }
